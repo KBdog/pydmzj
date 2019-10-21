@@ -2,6 +2,7 @@ import urllib.request
 import json
 import jsonpath
 
+#获取json的函数：
 def get_record(url):
     resp = urllib.request.urlopen(url)
     ele_json = json.loads(resp.read())
