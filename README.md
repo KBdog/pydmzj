@@ -39,3 +39,7 @@ params:
     "sum_chapters": 9
 }]
 ```
+
+## dmzjxsid.py
+
+逻辑很简单，遍历给定id上下限之间的所有漫画信息，打印出其中的id和name信息，用于更新另一仓库里的dmzjxsid.txt文件，方便手机端检索以及跳转操作。
