@@ -20,8 +20,8 @@ if __name__ == '__main__':
         if(id == False):
             x += 1
         else:
-            print('id:', id)
+            print('id:', id[0])
             title = jsonpath.jsonpath(get_record(url),'$.title')
-            print('name:', title)
+            print('name:', title[0])
         #print(get_record(url))
             x += 1
