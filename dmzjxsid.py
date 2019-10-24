@@ -23,6 +23,4 @@ if __name__ == '__main__':
             print('id:', id[0])
             name = jsonpath.jsonpath(get_record(url),'$.name')
             print('name:', name[0])
-
-        #print(get_record(url))
             x += 1
