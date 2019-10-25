@@ -2,6 +2,7 @@
 
 import urllib.request
 import json
+import jsonpath
 
 #获取json的函数：
 def get_record(url):
@@ -17,7 +18,6 @@ if __name__ == '__main__':
         url = 'http://v2.api.dmzj.com/comic/%d.json' % (x)
         '''
             改用字典操作
-        '''
         comic = get_record(url)
         if type(comic) == dict:
             print('id:',comic['id'])
@@ -25,13 +25,12 @@ if __name__ == '__main__':
             print('author:',comic['authors'][0]['tag_name'])
         x += 1
 
-    '''
+        '''
         id = jsonpath.jsonpath(get_record(url),'$.id')
         if(id == False):
             x += 1
         else:
             print('id:', id[0])
-            title = jsonpath.jsonpath(get_record(url),'$.tag_name')
-            print('name:', title)
+            title = jsonpath.jsonpath(get_record(url),'$.authors..tag_name')
+            print('author:', title[0])
             x += 1
-    '''
