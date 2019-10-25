@@ -31,6 +31,8 @@ if __name__ == '__main__':
             x += 1
         else:
             print('id:', id[0])
-            title = jsonpath.jsonpath(get_record(url),'$.authors..tag_name')
-            print('author:', title[0])
+            title = jsonpath.jsonpath(get_record(url),'$.title')
+            print('title:', title[0])
+            author = jsonpath.jsonpath(get_record(url),'$.authors..tag_name')
+            print('author:', author[0])
             x += 1
