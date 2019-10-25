@@ -31,6 +31,7 @@ if __name__ == '__main__':
             print('author:',comic['authors'][0]['tag_name'])
         x += 1
 
+        #Jsonpath操作
         '''
         id = jsonpath.jsonpath(get_record(url),'$.id')
         if(id == False):
