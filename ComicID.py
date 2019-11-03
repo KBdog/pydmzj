@@ -15,7 +15,6 @@ if __name__ == '__main__':
     a = int(input("输入一个漫画id下限："))
     x = a
     b = int(input("输入一个漫画id上限: "))
-    start = time.process_time()
     while x <= b :
         url = 'http://v2.api.dmzj.com/comic/%d.json' % (x)
 
