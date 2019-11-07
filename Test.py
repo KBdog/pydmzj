@@ -32,8 +32,9 @@ url = 'http://v2.api.dmzj.com/comic/44516.json'
 } 
 整理一下可以看出最外层是个字典{}，可以根据字典的查找来获取想要的内容
 '''
-#获取id:
+
 Test = get_record(url)
+#获取id:
 print(Test['id'])
 #获取title:
 print(Test['title'])
