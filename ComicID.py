@@ -17,7 +17,7 @@ if __name__ == '__main__':
     b = int(input("输入一个漫画id上限: "))
     while x <= b :
         url = 'http://v2.api.dmzj.com/comic/%d.json' % (x)
-
+        print(get_record(url))
         #改用字典操作
         '''
         若用jsonpath操作，将下面未注释的注释即可，然后将注释的取消注释。

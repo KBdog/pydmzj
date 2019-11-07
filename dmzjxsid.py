@@ -13,7 +13,6 @@ if __name__ == '__main__':
     a = int(input("输入一个小说id下限："))
     x = a
     b = int(input("输入一个小说id上限: "))
-
     while x <= b :
         url = 'http://v2.api.dmzj.com/novel/%d.json' % (x)
         id = jsonpath.jsonpath(get_record(url),'$.id')
