@@ -53,3 +53,7 @@ for i in Test['authors']:
 '''
 综上，通过列表和字典的操作，就能把自己想要的内容提取出来了。
 '''
+
+print(Test['id'],Test['title'],end=' ')
+for i in Test['authors']:
+    print(i['tag_name'],end=' ')
