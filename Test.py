@@ -29,8 +29,7 @@ url = 'http://v2.api.dmzj.com/comic/44516.json'
  'status': [{'tag_id': 2309, 'tag_name': '连载中'}], 
  'authors': [{'tag_id': 11919, 'tag_name': '樋野友行'}, {'tag_id': 15055, 'tag_name': '濑户メグル'}], 
  'subscribe_num': 130069, 
-}    'id': 44516,
-
+} 
 整理一下可以看出最外层是个字典{}，可以根据字典的查找来获取想要的内容
 '''
 #获取id:
