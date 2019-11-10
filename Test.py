@@ -8,7 +8,7 @@ def get_record(url):
     ele_json = json.loads(resp.read())
     return ele_json
 
-url = 'http://v2.api.dmzj.com/comic/44516.json'
+url = 'http://v2.api.dmzj.com/comic/13.json'
 '''
 以44516.json文件为例：get_record(url)获得的是这样的文件：
 {
@@ -34,6 +34,7 @@ url = 'http://v2.api.dmzj.com/comic/44516.json'
 '''
 
 Test = get_record(url)
+
 #获取id:
 print(Test['id'])
 #获取title:
