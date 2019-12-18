@@ -41,5 +41,6 @@ if __name__ == '__main__':
                 title = jsonpath.jsonpath(get_record(url),'$.title')
                 print('title:', title[0])
                 x += 1
-        except(json.decoder.JSONDecodeError):
-            x += 1
+        except Exception as e:
+            pass
+        continue

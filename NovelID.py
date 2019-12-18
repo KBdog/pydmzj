@@ -2,7 +2,6 @@
 import urllib.request
 import json
 import jsonpath
-
 #获取json的函数：
 def get_record(url):
     resp = urllib.request.urlopen(url)
@@ -19,7 +18,9 @@ if __name__ == '__main__':
         if(id == False):
             x += 1
         else:
-            print('id:', id[0])
             name = jsonpath.jsonpath(get_record(url),'$.name')
-            print('name:', name[0])
+            print('<tr>')
+            print('<td>{id}</td>'.format(id=id[0]))
+            print('<td>{name}</td>'.format(name = name[0]))
+            print('</tr>')
             x += 1
