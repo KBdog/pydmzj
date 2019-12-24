@@ -4,6 +4,7 @@
 因为动漫之家小说站已关闭，一些小说也无法通过搜索的api搜到，但是的确是存在的，于是遍历小说信息的api，从而获取所有小说的id信息。
 
 ```
+此API通过Charles抓包获得,未进行任何破解。此API仅供开发研究使用,API使用者造成的一切侵犯动漫之家权益的行为,请使用者自行承担责任。   
 小说详情api:  
 http://v2.api.dmzj.com/novel/${id}.json (旧)  
 http://v3api.dmzj.com/novel/${id}.json (新)  
@@ -11,11 +12,15 @@ http://v3api.dmzj.com/novel/${id}.json (新)
 http://v2.api.dmzj.com/comic/${id}.json (旧)  
 http://v3api.dmzj.com/comic/comic_${id}.json(新)  
 漫画下载api:  
-https://imgzip.dmzj.com/${first_character/number}}/${comic_id}}/${chapter_id}}.zip  
+https://imgzip.dmzj.com/${first_character/number}/${comic_id}}/${chapter_id}.zip  
 其中  
 ${first_character/number}：漫画名称首字母或者数字  
 ${comic_id}:漫画id  
 ${chapter_id}:章节id  
+漫画章节信息api:  
+http://v3api.dmzj.com/chapter/${comic_id}/${chapter_id}.json  
+漫画章节吐槽api:
+http://v3api.dmzj.com/viewPoint/0/${comic_id}/${chapter_id}.json  
 ```
 
 
