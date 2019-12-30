@@ -2,6 +2,9 @@
 import urllib.request
 import json
 import jsonpath
+#import pprint
+
+
 #获取json的函数：
 def get_record(url):
     resp = urllib.request.urlopen(url)
@@ -14,6 +17,7 @@ if __name__ == '__main__':
     b = int(input("输入一个小说id上限: "))
     while x <= b :
         url = 'http://v2.api.dmzj.com/novel/%d.json' % (x)
+        #pprint.pprint(get_record(url))
         id = jsonpath.jsonpath(get_record(url),'$.id')
         if(id == False):
             x += 1
