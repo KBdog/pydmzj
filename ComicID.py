@@ -13,8 +13,8 @@ def get_record(url):
         ele_json = json.loads(resp.read())
         return ele_json
     except Exception as e:
-        print(url + '漫画不存在!!!')
-        csv_writer.writerow([url + '漫画不存在!!!'])
+        print('漫画不存在!!!')
+        # csv_writer.writerow([url + '漫画不存在!!!'])
 if __name__ == '__main__':
     f = open('comic.csv','a',encoding='utf-8')
     csv_writer = csv.writer(f)

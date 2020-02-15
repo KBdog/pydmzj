@@ -31,3 +31,6 @@ http://v3api.dmzj.com/viewPoint/0/${comic_id}/${chapter_id}.json
 ## ComicID.py
 遍历所有漫画的信息，打印出id和title。  
 现在动漫之家下架了一些隐藏漫画，相应链接返回的并不是字符串，从url获取json会出错。通过直接读取网页内容即可。或者写个抛出继续运行，忽略错误的url.
+
+## HideComic.py
+多线程处理获取隐藏漫画id...
