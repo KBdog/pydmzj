@@ -3,8 +3,13 @@
 
 因为动漫之家小说站已关闭，一些小说也无法通过搜索的api搜到，但是的确是存在的，于是遍历小说信息的api，从而获取所有小说的id信息。
 
+利用搜索api和遍历的小说列表写了个简单的前端用来方便大家跳转到隐藏漫画：  
+[动漫之家搜索](https://dmzj.zhanghd.tech)
+
 ```
 此API通过Charles抓包获得,未进行任何破解。此API仅供开发研究使用,API使用者造成的一切侵犯动漫之家权益的行为,请使用者自行承担责任。   
+动漫之家搜索api:
+http://sacg.dmzj.com/comicsum/search.php?s=${comic/author}
 小说详情api:  
 http://v2.api.dmzj.com/novel/${id}.json (旧)  
 http://v3api.dmzj.com/novel/${id}.json (新)  
